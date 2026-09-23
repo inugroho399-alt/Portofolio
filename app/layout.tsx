@@ -24,7 +24,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ilhamdev.my.id"),
+  metadataBase: new URL("https://portofolio-blush-three-66.vercel.app"),
   title: "Ilham Nugroho — Front-End Developer & Founder Nikaha",
   description:
     "Ilham Nugroho membangun antarmuka web modern yang presisi dan responsif. Mahasiswa Teknik Informatika dan Founder Nikaha.",
@@ -41,22 +41,22 @@ export const metadata: Metadata = {
     "UI/UX Design",
   ],
   icons: {
-    icon: "/ilham.jpg",
-    shortcut: "/ilham.jpg",
-    apple: "/ilham.jpg",
+    icon: "/ilham.webp",
+    shortcut: "/ilham.webp",
+    apple: "/ilham.webp",
   },
   openGraph: {
     title: "Ilham Nugroho — Front-End Developer & Founder Nikaha",
     description:
-      "Membangun antarmuka web yang cantik, responsif, dan presisi.",
+      "Membangun antarmuka web modern yang presisi dan responsif. Mahasiswa Teknik Informatika dan Founder Nikaha.",
     type: "website",
-    url: "https://ilhamdev.my.id",
+    url: "https://portofolio-blush-three-66.vercel.app",
     siteName: "Ilham Nugroho — Portfolio",
     images: [
       {
-        url: "/ilham.jpg",
-        width: 800,
-        height: 800,
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
         alt: "Ilham Nugroho — Front-End Developer & Founder Nikaha",
       },
     ],
@@ -66,8 +66,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ilham Nugroho — Front-End Developer & Founder Nikaha",
     description:
-      "Membangun antarmuka web yang cantik, responsif, dan presisi.",
-    images: ["/ilham.jpg"],
+      "Membangun antarmuka web modern yang presisi dan responsif. Mahasiswa Teknik Informatika dan Founder Nikaha.",
+    images: ["/og-image.jpg"],
   },
 };
 

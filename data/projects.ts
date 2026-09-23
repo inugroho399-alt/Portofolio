@@ -61,7 +61,7 @@ export const otherProjects: ProjectItem[] = [
     disciplines: "Web Utilities • Next.js • Client-Side",
     description:
       "Aplikasi web serbaguna untuk merge, split, kompresi PDF, dan manipulasi gambar. Seluruh komputasi berjalan aman di browser tanpa server upload.",
-    image: "/projects/pdftools-showcase.jpg",
+    image: "/projects/pdftools-showcase.webp",
     tags: ["Next.js", "React", "Tailwind CSS", "Client-Side Processing", "WebAssembly"],
     demoUrl: "https://tools-multipurpose.vercel.app/",
     repoUrl: "",
@@ -75,7 +75,7 @@ export const otherProjects: ProjectItem[] = [
     disciplines: "Fitness App • TypeScript • PWA",
     description:
       "Aplikasi web pelacak kebugaran harian untuk memantau progressive overload latihan, grafik riwayat beban angkatan, dan konsistensi workout.",
-    image: "/projects/gym-showcase.jpg",
+    image: "/projects/gym-showcase.webp",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Interactive Dashboard", "PWA"],
     demoUrl: "https://gym-tracker-kappa-pied.vercel.app/",
     repoUrl: "",

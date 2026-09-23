@@ -102,7 +102,7 @@ export default function About() {
             }}
           >
             <Image
-              src="/workspace.jpg"
+              src="/workspace.webp"
               alt="Developer Workspace"
               fill
               sizes="(max-width: 840px) 100vw, 50vw"
