@@ -2,12 +2,17 @@
 
 import { useEffect, useRef, useState } from "react";
 
+interface ScrollRevealOptions {
+  threshold?: number;
+  rootMargin?: string;
+}
+
 /**
  * Hook sederhana untuk animasi scroll masuk (fade + slide).
  * Menggunakan IntersectionObserver — tidak butuh library eksternal.
  */
-export function useScrollReveal(options = {}) {
-  const ref = useRef(null);
+export function useScrollReveal(options: ScrollRevealOptions = {}) {
+  const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -22,8 +27,8 @@ export function useScrollReveal(options = {}) {
         }
       },
       {
-        threshold: options.threshold || 0.1,
-        rootMargin: options.rootMargin || "0px 0px -50px 0px",
+        threshold: options.threshold ?? 0.1,
+        rootMargin: options.rootMargin ?? "0px 0px -50px 0px",
       }
     );
 
