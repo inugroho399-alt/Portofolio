@@ -41,9 +41,12 @@ export const metadata: Metadata = {
     "UI/UX Design",
   ],
   icons: {
-    icon: "/ilham.webp",
-    shortcut: "/ilham.webp",
-    apple: "/ilham.webp",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "Ilham Nugroho — Front-End Developer & Founder Nikaha",
