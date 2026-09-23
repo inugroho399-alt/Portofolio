@@ -275,6 +275,7 @@ export default function Hero() {
                 >
                   <Image
                     src="/ilham-cutout.png"
+                    src="/ilham-cutout.webp"
                     alt="Ilham Nugroho — Front-End Developer"
                     width={575}
                     height={1024}
