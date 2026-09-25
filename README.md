@@ -35,7 +35,7 @@ Portofolio ini dirancang dengan estetika editorial modern (terinspirasi dari Beh
 - 📊 **Scroll Progress Bar**: Indikator tipis 2.5px di bagian paling atas viewport yang melacak progres membaca halaman secara real-time.
 - 🔢 **Animated Metric Counter (Skills Section)**: Penghitung angka dinamis (`3+`, `100%`, `10+`, `4+`) dengan akselerasi kurva *cubic ease-out* saat section masuk ke viewport.
 - 📋 **Micro-Interaction "Tersalin! ✓"**: Fitur salin 1-klik pada email dan nomor WhatsApp dengan badge feedback hijau otomatis.
-- 🖥️ **Interactive Project Showcase**: Frame mockup browser interaktif untuk proyek unggulan **Nikaha** dan modal preview live untuk proyek lainnya (PDFTools, Gym Tracker).
+- 🖥️ **Interactive Project Showcase**: Frame mockup browser interaktif untuk proyek unggulan **Nikaha** dan modal preview live untuk proyek lainnya (HMRIS, PDFTools, Gym Tracker).
 - 🌓 **Theme Switcher**: Dock navigasi bergaya kapsul kaca (*glassmorphism*) dengan tombol toggle tema terang/gelap yang tersimpan di `localStorage`.
 - 🔍 **Production-Ready SEO**: Dilengkapi Open Graph tags lengkap, Twitter Cards dengan banner 1200×630px, dan favicon monogram kustom.
 
@@ -76,7 +76,7 @@ web_porto/
 │   ├── OtherProjects.tsx    # Grid portofolio proyek akademik & independen
 │   └── Skills.tsx           # Kategori keahlian & animated counter statistik
 ├── data/
-│   ├── projects.ts          # Data terstruktur proyek (Nikaha, PDFTools, Gym Tracker)
+│   ├── projects.ts          # Data terstruktur proyek (Nikaha, HMRIS, PDFTools, Gym Tracker)
 │   └── skills.ts            # Data keahlian, teknologi, dan metrik
 └── public/
     ├── apple-touch-icon.png # Ikon homescreen smartphone

@@ -124,7 +124,7 @@ export default function OtherProjects() {
                     alt={project.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    priority={project.id === "pdf-tools" || project.id === "gym-tracker"}
+                    priority={project.id === "hmris" || project.id === "pdf-tools"}
                     className="preview-image"
                     style={{
                       objectFit: "cover",

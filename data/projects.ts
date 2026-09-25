@@ -54,6 +54,20 @@ export interface ProjectItem {
 
 export const otherProjects: ProjectItem[] = [
   {
+    id: "hmris",
+    title: "HMRIS — Hospital Medical Record Information System",
+    shortTitle: "HMRIS",
+    category: "Healthcare Web System",
+    disciplines: "Healthcare • Medical Records • Web System",
+    description:
+      "Sistem informasi rekam medis digital rumah sakit modern untuk pengelolaan data pasien, riwayat rekam medis, dan administrasi layanan kesehatan terintegrasi.",
+    image: "/projects/hmris.webp",
+    tags: ["Healthcare System", "Medical Records", "Dashboard", "Responsive Web", "UI/UX"],
+    demoUrl: "https://hospital-medical-record.netlify.app/",
+    repoUrl: "",
+    hasIframePreview: true,
+  },
+  {
     id: "pdf-tools",
     title: "PDFTools — Multi-Purpose PDF & Image Utilities",
     shortTitle: "PDFTools",
