@@ -213,6 +213,7 @@ export default function Hero() {
           >
             {/* Stage: tall enough that head reaches the heading */}
             <div
+              className="hero-stage"
               style={{
                 position: "relative",
                 width: "clamp(300px, 36vw, 420px)",
@@ -576,6 +577,40 @@ export default function Hero() {
             text-align: center;
           }
           .doodle-arrow { display: none; }
+        }
+
+        @media (max-width: 640px) {
+          .hero-heading-animate {
+            font-size: clamp(1.85rem, 7.5vw, 2.5rem) !important;
+            line-height: 1.12 !important;
+            letter-spacing: -0.03em !important;
+          }
+          .hero-left-col {
+            flex-direction: column !important;
+            align-items: center !important;
+            text-align: center !important;
+            gap: 1.25rem !important;
+          }
+          .hero-left-col > div {
+            max-width: 100% !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-stage {
+            width: min(310px, 90vw) !important;
+            height: clamp(390px, 115vw, 460px) !important;
+          }
+          .dome-circle {
+            width: min(250px, 75vw) !important;
+            height: min(250px, 75vw) !important;
+          }
+        }
+
+        @media (max-width: 380px) {
+          .hero-heading-animate {
+            font-size: clamp(1.6rem, 7.2vw, 1.85rem) !important;
+          }
         }
       `}</style>
     </section>

@@ -230,6 +230,7 @@ export default function FeaturedProject() {
                 ].map((tpl) => (
                   <div
                     key={tpl.name}
+                    className="template-item-row"
                     style={{
                       display: "flex",
                       alignItems: "center",
@@ -243,6 +244,7 @@ export default function FeaturedProject() {
                     </span>
                     {/* Horizontal connector line khas Behance */}
                     <div
+                      className="template-connector-line"
                       style={{
                         flex: 1,
                         height: "1px",
@@ -250,7 +252,7 @@ export default function FeaturedProject() {
                         minWidth: "20px",
                       }}
                     />
-                    <span style={{ color: "var(--ink-60)", fontSize: "0.85rem", whiteSpace: "nowrap" }}>
+                    <span className="template-desc" style={{ color: "var(--ink-60)", fontSize: "0.85rem", whiteSpace: "nowrap" }}>
                       {tpl.desc}
                     </span>
                   </div>
@@ -433,6 +435,19 @@ export default function FeaturedProject() {
           .featured-behance-grid {
             grid-template-columns: 1fr !important;
             gap: 2.5rem !important;
+          }
+        }
+        @media (max-width: 520px) {
+          .template-item-row {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 0.15rem !important;
+          }
+          .template-connector-line {
+            display: none !important;
+          }
+          .template-desc {
+            white-space: normal !important;
           }
         }
       `}</style>

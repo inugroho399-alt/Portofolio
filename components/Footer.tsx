@@ -11,7 +11,7 @@ export default function Footer() {
       }}
     >
       <div
-        className="container"
+        className="container footer-container"
         style={{
           display: "flex",
           alignItems: "center",
@@ -131,6 +131,17 @@ export default function Footer() {
           </a>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 480px) {
+          .footer-container {
+            flex-direction: column !important;
+            text-align: center !important;
+            gap: 0.85rem !important;
+            justify-content: center !important;
+          }
+        }
+      `}</style>
     </footer>
   );
 }
