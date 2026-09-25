@@ -64,7 +64,7 @@ export const otherProjects: ProjectItem[] = [
     image: "/projects/hmris-showcase.webp",
     tags: ["Healthcare System", "Medical Records", "Dashboard", "Responsive Web", "UI/UX"],
     demoUrl: "https://hospital-medical-record.netlify.app/",
-    repoUrl: "",
+    repoUrl: "https://github.com/inugroho399-alt/hospital-medical-record",
     hasIframePreview: true,
   },
   {
@@ -78,7 +78,7 @@ export const otherProjects: ProjectItem[] = [
     image: "/projects/pdftools-showcase.webp",
     tags: ["Next.js", "React", "Tailwind CSS", "Client-Side Processing", "WebAssembly"],
     demoUrl: "https://tools-multipurpose.vercel.app/",
-    repoUrl: "",
+    repoUrl: "https://github.com/inugroho399-alt/tools-multipurpose",
     hasIframePreview: true,
   },
   {
@@ -92,7 +92,7 @@ export const otherProjects: ProjectItem[] = [
     image: "/projects/gym-showcase.webp",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Interactive Dashboard", "PWA"],
     demoUrl: "https://gym-tracker-kappa-pied.vercel.app/",
-    repoUrl: "",
+    repoUrl: "https://github.com/inugroho399-alt/gym-tracker",
     hasIframePreview: true,
   },
 ];

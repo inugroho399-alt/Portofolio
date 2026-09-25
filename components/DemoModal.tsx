@@ -8,6 +8,7 @@ interface DemoModalProps {
   project: {
     title: string;
     demoUrl: string;
+    repoUrl?: string;
     hasIframePreview?: boolean;
   };
 }
@@ -75,25 +76,50 @@ export default function DemoModal({ isOpen, onClose, project }: DemoModalProps) 
               : `${project.title} — demo belum tersedia`}
           </div>
 
-          {/* Tombol buka tab baru */}
-          {isValidUrl && (
-            <a
-              href={project.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                fontSize: "0.78rem",
-                color: "#FF4624",
-                fontWeight: 700,
-                textDecoration: "none",
-                fontFamily: "var(--font-dm-sans), sans-serif",
-                whiteSpace: "nowrap",
-                paddingLeft: "0.5rem",
-              }}
-            >
-              buka
-            </a>
-          )}
+          {/* Tombol buka tab baru & GitHub */}
+          <div style={{ display: "flex", alignItems: "center", gap: "10px", paddingLeft: "0.5rem" }}>
+            {project.repoUrl && (
+              <a
+                href={project.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontSize: "0.78rem",
+                  color: "var(--ink-60)",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                  fontFamily: "var(--font-dm-sans), sans-serif",
+                  whiteSpace: "nowrap",
+                  transition: "color 0.15s ease",
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLElement).style.color = "var(--ink)";
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLElement).style.color = "var(--ink-60)";
+                }}
+              >
+                GitHub ↗
+              </a>
+            )}
+            {isValidUrl && (
+              <a
+                href={project.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontSize: "0.78rem",
+                  color: "#FF4624",
+                  fontWeight: 700,
+                  textDecoration: "none",
+                  fontFamily: "var(--font-dm-sans), sans-serif",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                buka ↗
+              </a>
+            )}
+          </div>
 
           {/* Tutup */}
           <button
