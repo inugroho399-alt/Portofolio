@@ -61,7 +61,7 @@ export const otherProjects: ProjectItem[] = [
     disciplines: "Healthcare • Medical Records • Web System",
     description:
       "Sistem informasi rekam medis digital rumah sakit modern untuk pengelolaan data pasien, riwayat rekam medis, dan administrasi layanan kesehatan terintegrasi.",
-    image: "/projects/hmris.webp",
+    image: "/projects/hmris-showcase.webp",
     tags: ["Healthcare System", "Medical Records", "Dashboard", "Responsive Web", "UI/UX"],
     demoUrl: "https://hospital-medical-record.netlify.app/",
     repoUrl: "",
